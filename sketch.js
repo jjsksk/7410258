@@ -37,7 +37,7 @@ function draw() {
     drawLine(indices, '#fde4cf', 15);
 
     // 畫第二組線條並填滿（#fbf8cc）
-    drawShape(indices2, [255, 0, 0], 15, [251, 248, 204]); // 填充顏色修正為 #fbf8cc
+    drawShape(indices2, '#fde4cf', 15, [251, 248, 204]); // 填充顏色修正為 #fbf8cc
 
     // 在第一組與第二組之間充滿#ffcfd2
     fill(255, 207, 210, 150); // 半透明#ffcfd2
@@ -58,14 +58,14 @@ function draw() {
     // 畫第三組線條（#b9fbc0，粗細20）
     drawLine(indices3, '#b9fbc0', 20);
 
-    // 畫第四組線條並填滿（#b9fbc0）
-    drawShape(indices4, [185, 251, 192], 15, [185, 251, 192]); // 填充顏色修正為 #b9fbc0
+    // 畫第四組線條並填滿（#f1c0e8，內部填滿#b9fbc0）
+    drawShape(indices4, '#f1c0e8', 20, [185, 251, 192]);
 
     // 畫第五組線條（#b9fbc0，粗細20）
     drawLine(indices5, '#b9fbc0', 20);
 
-    // 畫第六組線條並填滿（#b9fbc0）
-    drawShape(indices6, [185, 251, 192], 15, [185, 251, 192]); // 填充顏色修正為 #b9fbc0
+    // 畫第六組線條並填滿（#f1c0e8，內部填滿#b9fbc0）
+    drawShape(indices6, '#f1c0e8', 20, [185, 251, 192]);
   }
 }
 
@@ -79,7 +79,7 @@ function drawShape(indices, strokeColor, strokeWeightValue, fillColor) {
     noFill();
   }
 
-  stroke(...strokeColor);
+  stroke(strokeColor);
   strokeWeight(strokeWeightValue);
   beginShape();
   for (let i = 0; i < indices.length; i++) {
