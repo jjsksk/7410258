@@ -37,7 +37,7 @@ function draw() {
     drawLine(indices, '#fde4cf', 15);
 
     // 畫第二組線條並填滿（#fbf8cc）
-    drawShape(indices2, [255, 0, 0], 15, [251, 248, 204]);
+    drawShape(indices2, [255, 0, 0], 15, [251, 248, 204]); // 填充顏色修正為 #fbf8cc
 
     // 在第一組與第二組之間充滿#ffcfd2
     fill(255, 207, 210, 150); // 半透明#ffcfd2
@@ -59,13 +59,13 @@ function draw() {
     drawLine(indices3, '#b9fbc0', 20);
 
     // 畫第四組線條並填滿（#b9fbc0）
-    drawShape(indices4, [185, 251, 192], 15, [185, 251, 192]);
+    drawShape(indices4, [185, 251, 192], 15, [185, 251, 192]); // 填充顏色修正為 #b9fbc0
 
     // 畫第五組線條（#b9fbc0，粗細20）
     drawLine(indices5, '#b9fbc0', 20);
 
     // 畫第六組線條並填滿（#b9fbc0）
-    drawShape(indices6, [185, 251, 192], 15, [185, 251, 192]);
+    drawShape(indices6, [185, 251, 192], 15, [185, 251, 192]); // 填充顏色修正為 #b9fbc0
   }
 }
 
